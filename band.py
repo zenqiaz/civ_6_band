@@ -13,7 +13,7 @@ from sklearn import svm
 from sklearn.linear_model import LinearRegression
 rank_thershold=[0,9,11,13,15,17]#决定演出等级的阈值
 def concert(band, place):
-    base=[75,200,75,250,100,150]#各演出等级的产箱因子
+    base=[75,200,75,250,100,300]#各演出等级的产箱因子
     dice=random.randint(1,6)+random.randint(1,6)+random.randint(1,6)#3d6+演出等级，取这个值大于的最高阈值作为演出等级
     disband=0
     promote=0
